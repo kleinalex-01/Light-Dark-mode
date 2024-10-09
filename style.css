@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    color: var(--text-color);
+}
+
+:root {
+    --body-background: white;
+    --container-background: #FAEDCE;
+    --container-inner-background: #E0E5B6;
+    --text-color: #1E201E;
+    --border: 3px solid #1E201E;
+}
+
+.dark-mode {
+    --body-background: #1E201E;
+    --container-background: #1E201E;
+    --container-inner-background: #1E201E;
+    --text-color: #FAEDCE;
+    --border: 3px solid #FAEDCE;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--body-background);
+    min-height: 100vh;
+}
+
+.container {
+    height: 20rem;
+    width: 30rem;
+    border: var(--border);
+    border-radius: 2rem;
+    background-color: var(--container-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-inner {
+    height: 70%;
+    width: 70%;
+    border: var(--border);
+    border-radius: 2rem;
+    background-color: var(--container-inner-background);
+}
+
+.btn-container {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    border: var(--border);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
